@@ -1,0 +1,19 @@
+.chat-messages-create-container {
+  width: calc(100% - 22rem);
+  position: absolute;
+  bottom: 0;
+
+  .set-message-wrapper {
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+
+    .mat-form-field {
+      width: calc(100% - 5.4rem);
+      margin-right: .4rem;
+
+      .chat-messages-create-input {
+        width: 100%;
+      }
+    }
+  }
+}

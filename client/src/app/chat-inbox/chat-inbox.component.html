@@ -1,0 +1,19 @@
+<div class="chat-messages">
+  <app-messages-list *ngIf="user !== null" [socket]="socket" [currentUserId]="user!.id"></app-messages-list>
+  <div class="chat-messages-create-container">
+    <div class="set-message-wrapper">
+      <mat-form-field>
+        <input 
+          matInput 
+          class="chat-messages-create-input" 
+          placeholder="Type your message here" 
+          type="text"
+          [(ngModel)]="message"
+        />
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="chat-messages-create-button" (click)="sendMessage()">
+        Send
+      </button>
+    </div>
+  </div>
+</div>

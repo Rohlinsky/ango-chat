@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  client:
+    restart: always
+    build:
+      context: client
+      target: dev
+    volumes:
+      - ./client/src:/opt/app/src
+    ports:
+      - 4200:4200
+    depends_on:
+      - server
+
+  server:
+    restart: always
+    build:
+      context: server
+      target: dev
+    volumes:
+      - ./server/src:/opt/app/src
+    ports:
+      - 3000:3000
+
+volumes:
+  server:

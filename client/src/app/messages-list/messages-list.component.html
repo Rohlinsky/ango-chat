@@ -1,0 +1,7 @@
+<div *ngFor="let message of messages" class="message-wrapper" id="id{{message.user.id}}">
+  <div class="align {{ currentUserId === message.user.id ? 'self' : '' }}">
+    <span class="user" style="color: #2ec3a2; font-weight: bold;">{{(currentUserId !== message.user.id) ? message.user.username : "You"}}: </span>
+    <span class="message-content" style='word-wrap: break-word;'>{{message.message}}</span>
+  </div>
+  <div style="clear: both;"></div>
+</div>

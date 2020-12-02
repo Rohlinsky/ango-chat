@@ -1,0 +1,46 @@
+header {
+  height: 2rem;
+  padding: 1rem;
+  background: #c0fd5f;
+  font-size: 2rem;
+  box-shadow: inset 1px -1px 0 0px #8de059;
+
+  background: #3f51b5;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  color: #fff;
+
+  .title {
+    vertical-align: top;
+    position: relative;
+    top: 0.5rem;
+    right: 0;
+    float: right;
+    display: inline-block;
+    margin-right: 5rem;
+  }
+
+  img {
+    margin-right: 1rem;
+  }
+}
+
+main {
+  content {
+    width: calc(100% - 25rem);
+    padding-right: 3rem;
+    padding-top: 2rem;
+    float: left;
+    height: calc(100vh - 10rem);
+    overflow-y: scroll;
+  }
+
+  .sidebar {
+    width: 20rem;
+    padding: 1rem;
+    float: right;
+    background: #d1d9ff;
+    background: #5867b7;
+    height: calc(100vh - 6rem);
+    color: #fff;
+  }
+}

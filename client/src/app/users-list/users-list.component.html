@@ -1,0 +1,14 @@
+<div>
+  <ul class="users list">
+    <li 
+      *ngFor="let user of users"
+      class="user {{(user.id === currentUserId) ? ' current' : ''}}"
+      id="id${id}"
+    >
+      <a *ngIf="user.id === currentUserId" href="#container" title="Chnage Name">@{{user.username}}(YOU)</a>
+      <span *ngIf="user.id !== currentUserId">
+        @{{user.username}}
+      </span>
+    </li>
+  </ul>
+</div>

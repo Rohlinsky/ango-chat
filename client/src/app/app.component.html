@@ -1,0 +1,16 @@
+<div>
+  <header>
+  	<img src="assets/angular-logo.svg"/>
+  	<img src="assets/nestjs-logo.svg"/>
+  	<span class="title">CHAT USER LIST</span>
+  </header>
+  <main>
+  	<content>
+	    <app-chat-inbox *ngIf="socket !== null" [socket]="socket" [user]="user"></app-chat-inbox>
+    </content>
+    <div class="sidebar">
+      <app-users-list *ngIf="user !== null" [socket]="socket" [users]="users" [currentUserId]="user!.id"></app-users-list>
+    </div>
+	<app-modal-window *ngIf="socket !== null" [socket]="socket" [user]="user"></app-modal-window>
+  </main>
+</div>
